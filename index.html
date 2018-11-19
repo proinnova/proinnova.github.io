@@ -36,7 +36,7 @@ map.on('click', function(e) {
 
   var popup = new mapboxgl.Popup({ offset: [0, -15] })
     .setLngLat(feature.geometry.coordinates)
-    .setHTML('<h3>' + feature.properties.title + '</h3><p>' + feature.properties.description + '</p>')
+    .setHTML('<h3> Cultivo: ' + feature.properties.cultivo + '</h3><p>Tipo riego: ' + feature.properties.tipo_riego + '</p>')
     .setLngLat(feature.geometry.coordinates)
     .addTo(map);
 });
